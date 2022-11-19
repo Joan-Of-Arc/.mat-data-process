@@ -6,8 +6,8 @@ class MatDataProcess:
         """ 
         初始化传入一个mat对象(文件路径), 先对all_label进行划分 
         data: mat文件路径
-        data_key: mat 文件中数据的键, 如 all_data
-        label_key: mat 文件中标签的键, 如 all_label  
+        data_key: mat 文件中数据的键, 如 "all_data"
+        label_key: mat 文件中标签的键, 如 "all_label"  
         """
         self.data = scio.loadmat(data)
         self.data_key = data_key
